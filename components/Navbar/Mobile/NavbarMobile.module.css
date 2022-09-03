@@ -1,0 +1,19 @@
+#navMobile {
+  width: 100%;
+  background-color: #ffffff;
+  height: 72px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2rem;
+}
+/*# sourceMappingURL=NavbarMobile.module.css.map */

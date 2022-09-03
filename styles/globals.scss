@@ -3,6 +3,8 @@
 //    Tablet: min-width 376px
 //    Desktop: min-width 769px
 
+@import "./variables";
+
 @font-face {
   font-family: "dm_sansregular";
   src: url("/fonts/dmsans-regular-webfont.woff2") format("woff2"),
@@ -26,6 +28,11 @@ body {
   padding: 0;
   margin: 0;
   font-size: calc(60% + 0.8vmin);
+  width: 100vw;
+}
+
+body {
+  margin-top: $nav-height;
 }
 
 a {

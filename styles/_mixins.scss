@@ -1,4 +1,4 @@
-@import "./_variables";
+@import "./variables";
 
 @mixin headerStyle() {
   font-family: $header-font;
@@ -41,8 +41,10 @@
   color: $color;
   width: 158px;
   height: 40px;
-  margin: 3rem;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &:hover {
     background-color: $grey;
