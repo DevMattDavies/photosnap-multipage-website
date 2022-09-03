@@ -1,9 +1,5 @@
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../components/Home/Home.module.scss";
+import HomePage from "../components/Home/Home";
 
 export default function Home() {
-  return (
-    <></>
-  );
+  return <HomePage />;
 }

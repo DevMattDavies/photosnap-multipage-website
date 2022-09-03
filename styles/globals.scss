@@ -1,3 +1,14 @@
+@import "./variables";
+
+@font-face {
+  font-family: "dm_sansregular";
+  src: url("/fonts/dmsans-regular-webfont.woff2") format("woff2"),
+    url("/fonts/dmsans-regular-webfont.woff") format("woff"),
+    url("/fonts/dmsans-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html,
 body {
   padding: 0;
@@ -14,4 +25,3 @@ a {
   box-sizing: border-box;
   font-size: 1rem;
 }
-

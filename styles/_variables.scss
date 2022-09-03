@@ -1,1 +1,10 @@
-$primary-color: red;
+$font: "dm_sansregular";
+$black: #000000;
+$grey: #dfdfdf;
+$white: #ffffff;
+$accent: linear-gradient(
+  40deg,
+  rgba(255, 197, 147, 1) 0%,
+  rgba(188, 113, 152, 1) 35%,
+  rgba(90, 119, 255, 1) 100%
+);
