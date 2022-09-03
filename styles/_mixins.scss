@@ -33,7 +33,7 @@
 }
 
 @mixin buttonStyle($color, $background-color) {
-  font-family: $header-font;
+  font-family: $body-font;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 2px;
@@ -53,7 +53,7 @@
 }
 
 @mixin linkStyle($color) {
-  font-family: $header-font;
+  font-family: $body-font;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 2px;

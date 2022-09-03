@@ -20,7 +20,7 @@ function NavbarModal() {
             GET AN INVITE
           </button>
         </div>
-        <div className={styles.background}></div>
+        {/* <div className={styles.background}></div> */}
       </div>
     </>
   );

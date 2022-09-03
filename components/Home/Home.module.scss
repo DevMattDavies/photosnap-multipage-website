@@ -1,6 +1,2 @@
 @import "../../styles/_variables";
 @import "../../styles/_mixins";
-
-.test {
-  @include buttonStyle($white, $black);
-}

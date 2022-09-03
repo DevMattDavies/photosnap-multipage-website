@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import NavbarMobile from "./Mobile/NavbarMobile";
+import NavbarDesktop from "./Desktop/NavbarDesktop";
 
 function Navbar() {
   const [width, setWidth] = useState(0);
@@ -16,7 +17,6 @@ function Navbar() {
     window.addEventListener("resize", handleResize, false);
   }, []);
 
-  return <NavbarMobile />;
+  return <>{width <= 480 ? <NavbarMobile /> : <NavbarDesktop />}</>;
 }
-
 export default Navbar;

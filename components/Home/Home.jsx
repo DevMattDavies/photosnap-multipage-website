@@ -1,7 +1,8 @@
-import styles from "./Home.module.scss";
+// import styles from "./StoriesandImages/";
+import StoriesandImages from "./StoriesandImages/StoriesandImages";
 
 function HomePage() {
-  return ;
+  return <StoriesandImages />;
 }
 
 export default HomePage;

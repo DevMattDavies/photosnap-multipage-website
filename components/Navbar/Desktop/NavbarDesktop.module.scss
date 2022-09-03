@@ -1,0 +1,27 @@
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+#navDesktop {
+  width: 100%;
+  background-color: $white;
+  height: $nav-height;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.linksContainer {
+  display: flex;
+  gap: 1rem;
+}
+
+.navLink {
+  @include linkStyle($black);
+}
+
+.navButton {
+  @include buttonStyle($white, $black);
+}

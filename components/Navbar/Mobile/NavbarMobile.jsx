@@ -7,7 +7,6 @@ function NavbarMobile() {
   function menuToggleHandler() {
     setIsMenuOpen((prevIsMenuOpen) => !prevIsMenuOpen);
   }
-  console.log(isMenuOpen);
 
   return (
     <nav id={styles.navMobile}>
