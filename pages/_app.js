@@ -1,4 +1,6 @@
-import '../styles/globals.scss'
+import "../styles/globals.scss";
+import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Footer/Footer";
 
 if (typeof window !== "undefined") {
   // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
@@ -15,7 +17,13 @@ if (typeof window !== "undefined") {
 }
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Navbar />
+      <Component {...pageProps} />
+      <Footer />
+    </>
+  );
 }
 
-export default MyApp
+export default MyApp;

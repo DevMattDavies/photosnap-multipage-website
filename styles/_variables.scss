@@ -1,4 +1,4 @@
-$font: "dm_sansregular";
+// Colours
 $black: #000000;
 $grey: #dfdfdf;
 $white: #ffffff;
@@ -8,3 +8,10 @@ $accent: linear-gradient(
   rgba(188, 113, 152, 1) 35%,
   rgba(90, 119, 255, 1) 100%
 );
+
+// Fonts
+$header-font: "dm_sansbold", sans-serif;
+$body-font: "dm_sansregular", sans-serif;
+$header-size: 40px;
+
+//

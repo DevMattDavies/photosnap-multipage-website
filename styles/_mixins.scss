@@ -1,0 +1,63 @@
+@import "./_variables";
+
+@mixin headerStyle() {
+  font-family: $header-font;
+  font-size: 40px;
+  letter-spacing: 4.17px;
+  line-height: 48px;
+}
+
+@mixin subheading1Style() {
+  font-family: $header-font;
+  font-size: 24px;
+  line-height: 25px;
+}
+
+@mixin subheading2Style() {
+  font-family: $header-font;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+@mixin subheading3Style() {
+  font-family: $header-font;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+}
+
+@mixin bodyStyle() {
+  font-family: $body-font;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+@mixin buttonStyle($color, $background-color) {
+  font-family: $header-font;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  background-color: $background-color;
+  color: $color;
+  width: 158px;
+  height: 40px;
+  margin: 3rem;
+  border: none;
+
+  &:hover {
+    background-color: $grey;
+    color: $black;
+  }
+}
+
+@mixin linkStyle($color) {
+  font-family: $header-font;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  color: $color;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

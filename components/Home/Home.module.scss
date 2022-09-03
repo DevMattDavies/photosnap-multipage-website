@@ -1,5 +1,6 @@
 @import "../../styles/_variables";
+@import "../../styles/_mixins";
 
 .test {
-  font-family: $font;
+  @include buttonStyle($white, $black);
 }
