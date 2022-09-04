@@ -1,16 +1,16 @@
-.modalContainer {
-  position: fixed;
-  z-index: 1;
-  margin-top: 72px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.background {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 100%;
 }
 
-.modalContent {
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  margin-top: 72px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,9 +18,71 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 90%;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.modal__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  gap: 1.5rem;
+  padding: 3rem 0;
+}
+
+.modal__navLink {
+  font-family: "dm_sansbold", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+}
+
+.modal__navButton {
+  font-family: "dm_sansregular", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  background-color: #000000;
+  color: #ffffff;
+  width: 158px;
+  height: 40px;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.modal__navButton:hover {
+  background-color: #dfdfdf;
+  color: #000000;
+}
+
+.modal hr {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #979797;
 }
 /*# sourceMappingURL=NavbarModal.module.css.map */

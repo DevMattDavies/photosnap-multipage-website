@@ -3,20 +3,20 @@ import Link from "next/link";
 
 function NavbarDesktop() {
   return (
-    <nav id={styles.navDesktop}>
+    <nav className={styles.navDesktop}>
       <img src="/assets/shared/desktop/logo.svg" alt="Main logo SVG" />
-      <div className={styles.linksContainer}>
+      <div className={styles.navDesktop__linksContainer}>
         <Link href="#">
-          <a className={styles.navLink}>STORIES</a>
+          <a className={styles.navDesktop__navLink}>STORIES</a>
         </Link>
         <Link href="#">
-          <a className={styles.navLink}>FEATURES</a>
+          <a className={styles.navDesktop__navLink}>FEATURES</a>
         </Link>
         <Link href="#">
-          <a className={styles.navLink}>PRICING</a>
+          <a className={styles.navDesktop__navLink}>PRICING</a>
         </Link>
       </div>
-      <button type="button" className={styles.navButton}>
+      <button type="button" className={styles.navDesktop__navButton}>
         GET AN INVITE
       </button>
     </nav>

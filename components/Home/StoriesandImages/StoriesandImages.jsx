@@ -2,8 +2,8 @@ import styles from "./StoriesandImages.module.scss";
 
 function StoriesandImages() {
   return (
-    <div className={styles.gridContainer}>
-      <div className={styles.firstRow}>
+    <div className={styles.grid}>
+      <div className={styles.grid__row}>
         <picture>
           <source
             media="(min-width: 769px)"
@@ -14,24 +14,24 @@ function StoriesandImages() {
             srcSet="/assets/home/tablet/create-and-share.jpg"
           ></source>
           <img
-            className={styles.imgContainer}
+            className={styles.grid__image}
             src="/assets/home/mobile/create-and-share.jpg"
             alt="Create and share"
           ></img>
         </picture>
-        <div className={styles.textContainer}>
-          <h1 className={styles.titleStyle}>
+        <div className={styles.grid__textContainer}>
+          <h1 className={styles.grid__title}>
             CREATE AND SHARE YOUR PHOTO STORIES.
           </h1>
-          <p className={styles.textStyle}>
+          <p className={styles.grid__textBody}>
             Photosnap is a platform for photographers and visual storytellers.
             We make it easy to share photos, tell stories and connect with
             others.
           </p>
-          <div className={styles.linkContainer}>
-            <p className={styles.linkStyle}>GET AN INVITE</p>
+          <div className={styles.grid__linkContainer}>
+            <p className={styles.grid__link}>GET AN INVITE</p>
             <img
-              className={styles.whiteArrow}
+              className={styles.grid__whiteArrow}
               src="/assets/shared/desktop/arrow.svg"
               alt="arrow icon"
             ></img>

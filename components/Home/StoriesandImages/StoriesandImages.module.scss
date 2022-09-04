@@ -12,42 +12,42 @@
   padding: 3rem;
 }
 
-.textContainer {
-  @include textContainer($black, $white);
-}
-
-.titleStyle {
-  @include headerStyle();
-}
-
-.textStyle {
-  @include bodyStyle();
-  color: grey;
-}
-
-.linkContainer {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.linkStyle {
-  @include linkStyle($white);
-}
-
-.whiteArrow {
-  @include whiteArrow();
-}
-
-.gridContainer {
+.grid {
   display: grid;
 
   @media screen and (min-width: 481px) {
     grid-template-columns: repeat(5, 1fr);
   }
-}
 
-.imgContainer {
-  width: 100%;
-  display: block;
+  &__image {
+    width: 100%;
+    display: block;
+  }
+
+  &__textContainer {
+    @include textContainer($black, $white);
+  }
+
+  &__title {
+    @include headerStyle();
+  }
+
+  &__textBody {
+    @include bodyStyle();
+    color: grey;
+  }
+
+  &__linkContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__link {
+    @include linkStyle($white);
+  }
+
+  &__whiteArrow {
+    @include whiteArrow();
+  }
 }

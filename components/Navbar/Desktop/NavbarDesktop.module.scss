@@ -1,7 +1,7 @@
 @import "../../../styles/mixins";
 @import "../../../styles/variables";
 
-#navDesktop {
+.navDesktop {
   width: 100%;
   background-color: $white;
   height: $nav-height;
@@ -11,17 +11,17 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
 
-.linksContainer {
-  display: flex;
-  gap: 1rem;
-}
+  &__linksContainer {
+    display: flex;
+    gap: 1rem;
+  }
 
-.navLink {
-  @include linkStyle($black);
-}
+  &__navLink {
+    @include linkStyle($black);
+  }
 
-.navButton {
-  @include buttonStyle($white, $black);
+  &__navButton {
+    @include buttonStyle($white, $black);
+  }
 }

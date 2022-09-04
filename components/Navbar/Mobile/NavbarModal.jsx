@@ -4,19 +4,19 @@ import Link from "next/link";
 function NavbarModal() {
   return (
     <>
-      <div className={styles.modalContainer}>
-        <div className={styles.modalContent}>
+      <div className={styles.modal}>
+        <div className={styles.modal__content}>
           <Link href="#">
-            <a className={styles.navLink}>STORIES</a>
+            <a className={styles.modal__navLink}>STORIES</a>
           </Link>
           <Link href="#">
-            <a className={styles.navLink}>FEATURES</a>
+            <a className={styles.modal__navLink}>FEATURES</a>
           </Link>
           <Link href="#">
-            <a className={styles.navLink}>PRICING</a>
+            <a className={styles.modal__navLink}>PRICING</a>
           </Link>
           <hr />
-          <button type="button" className={styles.navButton}>
+          <button type="button" className={styles.modal__navButton}>
             GET AN INVITE
           </button>
         </div>
