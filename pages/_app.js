@@ -1,3 +1,5 @@
+import { createContext, useState, useEffect } from "react";
+
 import "../styles/globals.scss";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
@@ -16,12 +18,29 @@ if (typeof window !== "undefined") {
   });
 }
 
+export const WidthContext = createContext(null);
+
 function MyApp({ Component, pageProps }) {
+  const [width, setWidth] = useState(0);
+  useEffect(() => {
+    setWidth(window.innerWidth);
+  }, []);
+
+  const handleResize = () => {
+    setWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize, false);
+  }, []);
+
   return (
     <>
-      <Navbar />
-      <Component {...pageProps} />
-      <Footer />
+      <WidthContext.Provider value={width}>
+        <Navbar />
+        <Component {...pageProps} />
+        <Footer />
+      </WidthContext.Provider>
     </>
   );
 }

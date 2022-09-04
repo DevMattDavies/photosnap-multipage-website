@@ -42,7 +42,7 @@ function StoriesandImages() {
           <div className={styles.grid__linkContainer}>
             <p className={styles["grid__link--black"]}>VIEW THE STORIES</p>
             <img
-              className={styles["grid__arrow"]}
+              className={styles["grid__arrow--black"]}
               src="/assets/shared/desktop/arrow.svg"
               alt="arrow icon"
             ></img>
@@ -64,7 +64,7 @@ function StoriesandImages() {
           <div className={styles.grid__linkContainer}>
             <p className={styles["grid__link--black"]}>VIEW THE STORIES</p>
             <img
-              className={styles["grid__arrow"]}
+              className={styles["grid__arrow--black"]}
               src="/assets/shared/desktop/arrow.svg"
               alt="arrow icon"
             ></img>
