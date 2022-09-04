@@ -1,7 +1,7 @@
 // Media breakpoints:
 //    Mobile: max-width 480px
 //    Tablet: min-width 481px
-//    Desktop: min-width 769px
+//    Desktop: min-width 1008px
 
 @import "./variables";
 
@@ -42,5 +42,7 @@ a {
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
   // font-size: 1rem;
 }
