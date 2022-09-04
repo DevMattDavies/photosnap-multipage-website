@@ -1,0 +1,102 @@
+.flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3rem;
+}
+
+.flexContainer__itemsContainer {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flexContainer__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  padding: 3rem 0;
+  max-width: 500px;
+  min-height: 100%;
+}
+
+.flexContainer__image--responsive {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 1rem;
+}
+
+.flexContainer__image--no-limit {
+  width: 72px;
+  height: 36px;
+  margin-bottom: 1rem;
+  margin-top: 36px;
+}
+
+.flexContainer__image--embed {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 1rem;
+}
+
+.flexContainer__title {
+  font-family: "dm_sansbold", sans-serif;
+  font-size: 24px;
+  line-height: 25px;
+  color: #000000;
+}
+
+.flexContainer__text {
+  font-family: "dm_sansregular", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  color: #000000;
+}
+
+@media screen and (min-width: 1008px) {
+  .flexContainer__itemsContainer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 3rem;
+  }
+  .flexContainer__item {
+    width: 400px;
+  }
+}
+/*# sourceMappingURL=InfoContent.module.css.map */

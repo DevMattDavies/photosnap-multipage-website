@@ -13,6 +13,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 1000;
 }
 
 .navDesktop__linksContainer {
@@ -23,7 +24,7 @@
 }
 
 .navDesktop__navLink {
-  font-family: "dm_sansregular", sans-serif;
+  font-family: "dm_sansbold", sans-serif;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 2px;
@@ -32,6 +33,7 @@
 
 .navDesktop__navLink:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .navDesktop__navButton {
@@ -58,5 +60,6 @@
 .navDesktop__navButton:hover {
   background-color: #dfdfdf;
   color: #000000;
+  cursor: pointer;
 }
 /*# sourceMappingURL=NavbarDesktop.module.css.map */

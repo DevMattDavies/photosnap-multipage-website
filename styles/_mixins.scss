@@ -7,10 +7,11 @@
   line-height: 48px;
 }
 
-@mixin subheading1Style() {
+@mixin subheading1Style($color) {
   font-family: $header-font;
   font-size: 24px;
   line-height: 25px;
+  color: $color;
 }
 
 @mixin subheading2Style($color) {

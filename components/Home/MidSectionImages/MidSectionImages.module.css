@@ -102,10 +102,12 @@
   }
 }
 
-@media screen and (min-width: 1007px) {
+@media screen and (min-width: 1008px) {
   .grid {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: none;
+        grid-template-rows: none;
   }
 }
 /*# sourceMappingURL=MidSectionImages.module.css.map */
