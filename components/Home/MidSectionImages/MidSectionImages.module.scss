@@ -1,0 +1,72 @@
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+.grid {
+  display: grid;
+
+  &__item {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+
+  &__image {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: contain;
+    z-index: -1;
+    display: block;
+    filter: brightness(70%);
+  }
+
+  &__textContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    // justify-content: flex-end;
+    bottom: 2rem;
+    left: 2rem;
+    width: 80%;
+  }
+
+  &__linkContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+  }
+
+  &__link {
+    @include linkStyle($white);
+  }
+
+  &__arrow--white {
+    @include whiteArrow();
+  }
+
+  hr {
+    border: none;
+    border-bottom: 0.5px solid $grey;
+    padding-top: 1rem;
+  }
+
+  &__title {
+    @include subheading2Style($white);
+  }
+
+  &__attribution {
+    @include bodyStyle($white);
+  }
+
+  @media screen and (min-width: 481px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  @media screen and (min-width: 1007px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

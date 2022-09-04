@@ -17,25 +17,10 @@
 .grid {
   display: grid;
 
-  &__create-and-share-image {
-    background-image: url("/assets/home/mobile/create-and-share.jpg");
-    background-size: 100% 100%;
-    min-height: 294px;
+  &__image {
     width: 100%;
-  }
-
-  &__beautiful-stories-image {
-    background-image: url("/assets/home/mobile/beautiful-stories.jpg");
-    background-size: 100% 100%;
-    min-height: 271px;
-    width: 100%;
-  }
-
-  &__designed-for-everyone-image {
-    background-image: url("/assets/home/mobile/designed-for-everyone.jpg");
-    background-size: 100% 100%;
-    min-height: 271px;
-    width: 100%;
+    display: block;
+    height: 100%;
   }
 
   &__textContainer--black {
@@ -50,9 +35,12 @@
     @include headerStyle();
   }
 
-  &__textBody {
-    @include bodyStyle();
-    color: grey;
+  &__textBody--grey {
+    @include bodyStyle($grey);
+  }
+
+  &__textBody--black {
+    @include bodyStyle($black);
   }
 
   &__linkContainer {
@@ -123,27 +111,6 @@
       grid-row-end: 4;
     }
 
-    &__create-and-share-image {
-      background-image: url("/assets/home/tablet/create-and-share.jpg");
-      background-size: 100% 100%;
-      min-height: 650px;
-      width: 100%;
-    }
-
-    &__beautiful-stories-image {
-      background-image: url("/assets/home/tablet/beautiful-stories.jpg");
-      background-size: 100% 100%;
-      min-height: 650px;
-      width: 100%;
-    }
-
-    &__designed-for-everyone-image {
-      background-image: url("/assets/home/tablet/designed-for-everyone.jpg");
-      background-size: 100% 100%;
-      min-height: 650px;
-      width: 100%;
-    }
-
     &__textContainer--white {
       padding: 5rem;
     }
@@ -198,34 +165,5 @@
       grid-row-start: 3;
       grid-row-end: 4;
     }
-
-    &__create-and-share-image {
-      background-image: url("/assets/home/desktop/create-and-share.jpg");
-      background-size: 100% 100%;
-      min-height: 700px;
-      width: 100%;
-    }
-
-    &__beautiful-stories-image {
-      background-image: url("/assets/home/desktop/beautiful-stories.jpg");
-      background-size: 100% 100%;
-      min-height: 700px;
-      width: 100%;
-    }
-
-    &__designed-for-everyone-image {
-      background-image: url("/assets/home/desktop/designed-for-everyone.jpg");
-      background-size: 100% 100%;
-      min-height: 700px;
-      width: 100%;
-    }
-
-    // &__textContainer--white {
-    //   padding: 12rem;
-    // }
-
-    // &__textContainer--black {
-    //   padding: 12rem;
-    // }
   }
 }

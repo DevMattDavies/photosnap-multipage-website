@@ -50,6 +50,7 @@
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 2px;
+  color: #000000;
 }
 
 .modal__navButton {
@@ -78,6 +79,7 @@
 .modal__navButton:hover {
   background-color: #dfdfdf;
   color: #000000;
+  cursor: pointer;
 }
 
 .modal hr {

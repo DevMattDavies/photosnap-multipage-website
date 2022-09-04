@@ -3,25 +3,10 @@
   display: grid;
 }
 
-.grid__create-and-share-image {
-  background-image: url("/assets/home/mobile/create-and-share.jpg");
-  background-size: 100% 100%;
-  min-height: 294px;
+.grid__image {
   width: 100%;
-}
-
-.grid__beautiful-stories-image {
-  background-image: url("/assets/home/mobile/beautiful-stories.jpg");
-  background-size: 100% 100%;
-  min-height: 271px;
-  width: 100%;
-}
-
-.grid__designed-for-everyone-image {
-  background-image: url("/assets/home/mobile/designed-for-everyone.jpg");
-  background-size: 100% 100%;
-  min-height: 271px;
-  width: 100%;
+  display: block;
+  height: 100%;
 }
 
 .grid__textContainer--black {
@@ -69,11 +54,18 @@
   line-height: 48px;
 }
 
-.grid__textBody {
+.grid__textBody--grey {
   font-family: "dm_sansregular", sans-serif;
   font-size: 15px;
   line-height: 25px;
-  color: grey;
+  color: #dfdfdf;
+}
+
+.grid__textBody--black {
+  font-family: "dm_sansregular", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  color: #000000;
 }
 
 .grid__linkContainer {
@@ -96,6 +88,7 @@
 
 .grid__link--white:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .grid__link--black {
@@ -108,16 +101,25 @@
 
 .grid__link--black:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .grid__arrow--black {
   width: 50px;
 }
 
+.grid__arrow--black:hover {
+  cursor: pointer;
+}
+
 .grid__arrow--white {
   -webkit-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(109deg) brightness(102%) contrast(102%);
           filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(109deg) brightness(102%) contrast(102%);
   width: 50px;
+}
+
+.grid__arrow--white:hover {
+  cursor: pointer;
 }
 
 @media screen and (min-width: 481px) {
@@ -174,24 +176,6 @@
     -ms-grid-row: 3;
         grid-row-start: 3;
     grid-row-end: 4;
-  }
-  .grid__create-and-share-image {
-    background-image: url("/assets/home/tablet/create-and-share.jpg");
-    background-size: 100% 100%;
-    min-height: 650px;
-    width: 100%;
-  }
-  .grid__beautiful-stories-image {
-    background-image: url("/assets/home/tablet/beautiful-stories.jpg");
-    background-size: 100% 100%;
-    min-height: 650px;
-    width: 100%;
-  }
-  .grid__designed-for-everyone-image {
-    background-image: url("/assets/home/tablet/designed-for-everyone.jpg");
-    background-size: 100% 100%;
-    min-height: 650px;
-    width: 100%;
   }
   .grid__textContainer--white {
     padding: 5rem;
@@ -255,24 +239,6 @@
     -ms-grid-row: 3;
         grid-row-start: 3;
     grid-row-end: 4;
-  }
-  .grid__create-and-share-image {
-    background-image: url("/assets/home/desktop/create-and-share.jpg");
-    background-size: 100% 100%;
-    min-height: 700px;
-    width: 100%;
-  }
-  .grid__beautiful-stories-image {
-    background-image: url("/assets/home/desktop/beautiful-stories.jpg");
-    background-size: 100% 100%;
-    min-height: 700px;
-    width: 100%;
-  }
-  .grid__designed-for-everyone-image {
-    background-image: url("/assets/home/desktop/designed-for-everyone.jpg");
-    background-size: 100% 100%;
-    min-height: 700px;
-    width: 100%;
   }
 }
 /*# sourceMappingURL=StoriesandImages.module.css.map */

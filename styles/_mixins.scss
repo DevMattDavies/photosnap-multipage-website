@@ -13,23 +13,26 @@
   line-height: 25px;
 }
 
-@mixin subheading2Style() {
+@mixin subheading2Style($color) {
   font-family: $header-font;
   font-size: 18px;
   line-height: 25px;
+  color: $color;
 }
 
-@mixin subheading3Style() {
+@mixin subheading3Style($color) {
   font-family: $header-font;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 2px;
+  color: $color;
 }
 
-@mixin bodyStyle() {
+@mixin bodyStyle($color) {
   font-family: $body-font;
   font-size: 15px;
   line-height: 25px;
+  color: $color;
 }
 
 @mixin buttonStyle($color, $background-color) {
@@ -54,7 +57,7 @@
 }
 
 @mixin linkStyle($color) {
-  font-family: $body-font;
+  font-family: $header-font;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 2px;
