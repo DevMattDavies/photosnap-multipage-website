@@ -11,8 +11,8 @@ function InfoContent() {
           ></img>
           <h4 className={styles.flexContainer__title}>100% Responsive</h4>
           <p className={styles.flexContainer__text}>
-            No matter which the device you're on, our site is fully responsive
-            and stories look beautiful on any screen.
+            {`No matter which the device you're on, our site is fully responsive
+            and stories look beautiful on any screen.`}
           </p>
         </div>
         <div className={styles.flexContainer__item}>
