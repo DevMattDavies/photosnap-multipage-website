@@ -1,16 +1,30 @@
 @import "../../../styles/variables";
 @import "../../../styles/mixins";
 
+.blackTile {
+  background-color: $black;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whiteTile {
+  background-color: $white;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @mixin textContainer($background-color, $color) {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  // align-items: center;
   width: 100%;
-  height: 100%;
+  height: max-content;
   color: $color;
-  background-color: $background-color;
-  padding: 3rem;
+  // padding: 3rem;
   gap: 1.5rem;
 }
 
@@ -25,10 +39,19 @@
 
   &__textContainer--black {
     @include textContainer($black, $white);
+    border-left: 8px solid;
+    border-image-slice: 1;
+    border-width: 8px;
+    padding: 3rem;
+  }
+
+  &__borderGradient {
+    border-image-source: $accent;
   }
 
   &__textContainer--white {
     @include textContainer($white, $black);
+    padding: 3rem;
   }
 
   &__title {
@@ -112,11 +135,11 @@
     }
 
     &__textContainer--white {
-      padding: 5rem;
+      padding: 0 5rem;
     }
 
     &__textContainer--black {
-      padding: 5rem;
+      padding: 0 5rem;
     }
   }
 
@@ -164,6 +187,15 @@
       grid-column-end: 4;
       grid-row-start: 3;
       grid-row-end: 4;
+    }
+
+    &__textContainer--white {
+      padding: 10rem;
+    }
+
+    &__textContainer--black {
+      padding: 0 10rem;
+      gap: 4rem;
     }
   }
 }

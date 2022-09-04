@@ -4,6 +4,7 @@ import { WidthContext } from "../../../pages/_app";
 
 function StoriesandImages() {
   const width = useContext(WidthContext);
+
   return (
     <div className={styles.grid}>
       {/* --- Row 1 --- */}
@@ -28,22 +29,29 @@ function StoriesandImages() {
         )}
       </div>
       <div className={styles["grid__row-1-column-2"]}>
-        <div className={styles["grid__textContainer--black"]}>
-          <h1 className={styles.grid__title}>
-            CREATE AND SHARE YOUR PHOTO STORIES.
-          </h1>
-          <p className={styles["grid__textBody--grey"]}>
-            Photosnap is a platform for photographers and visual storytellers.
-            We make it easy to share photos, tell stories and connect with
-            others.
-          </p>
-          <div className={styles.grid__linkContainer}>
-            <p className={styles["grid__link--white"]}>GET AN INVITE</p>
-            <img
-              className={styles["grid__arrow--white"]}
-              src="/assets/shared/desktop/arrow.svg"
-              alt="arrow icon"
-            ></img>
+        <div className={styles.blackTile}>
+          <div
+            className={[
+              styles["grid__textContainer--black"],
+              styles.grid__borderGradient,
+            ].join(" ")}
+          >
+            <h1 className={styles.grid__title}>
+              CREATE AND SHARE YOUR PHOTO STORIES.
+            </h1>
+            <p className={styles["grid__textBody--grey"]}>
+              Photosnap is a platform for photographers and visual storytellers.
+              We make it easy to share photos, tell stories and connect with
+              others.
+            </p>
+            <div className={styles.grid__linkContainer}>
+              <p className={styles["grid__link--white"]}>GET AN INVITE</p>
+              <img
+                className={styles["grid__arrow--white"]}
+                src="/assets/shared/desktop/arrow.svg"
+                alt="arrow icon"
+              ></img>
+            </div>
           </div>
         </div>
       </div>
@@ -69,20 +77,24 @@ function StoriesandImages() {
         )}
       </div>
       <div className={styles["grid__row-2-column-2"]}>
-        <div className={styles["grid__textContainer--white"]}>
-          <h1 className={styles.grid__title}>BEAUTIFUL STORIES EVERY TIME.</h1>
-          <p className={styles["grid__textBody--black"]}>
-            We provide design templates to ensure your stories look terrific.
-            Easily add photos, text, embed maps and media from other networks.
-            Then share your story with everyone.
-          </p>
-          <div className={styles.grid__linkContainer}>
-            <p className={styles["grid__link--black"]}>VIEW THE STORIES</p>
-            <img
-              className={styles["grid__arrow--black"]}
-              src="/assets/shared/desktop/arrow.svg"
-              alt="arrow icon"
-            ></img>
+        <div className={styles.whiteTile}>
+          <div className={styles["grid__textContainer--white"]}>
+            <h1 className={styles.grid__title}>
+              BEAUTIFUL STORIES EVERY TIME.
+            </h1>
+            <p className={styles["grid__textBody--black"]}>
+              We provide design templates to ensure your stories look terrific.
+              Easily add photos, text, embed maps and media from other networks.
+              Then share your story with everyone.
+            </p>
+            <div className={styles.grid__linkContainer}>
+              <p className={styles["grid__link--black"]}>VIEW THE STORIES</p>
+              <img
+                className={styles["grid__arrow--black"]}
+                src="/assets/shared/desktop/arrow.svg"
+                alt="arrow icon"
+              ></img>
+            </div>
           </div>
         </div>
       </div>
@@ -108,20 +120,22 @@ function StoriesandImages() {
         )}{" "}
       </div>
       <div className={styles["grid__row-3-column-2"]}>
-        <div className={styles["grid__textContainer--white"]}>
-          <h1 className={styles.grid__title}>DESIGNED FOR EVERYONE.</h1>
-          <p className={styles["grid__textBody--black"]}>
-            Photosnap can help you create stories that resonate with your
-            audience. Our tool is designed for photographers of all levels,
-            brands, businesses you name it.
-          </p>
-          <div className={styles.grid__linkContainer}>
-            <p className={styles["grid__link--black"]}>VIEW THE STORIES</p>
-            <img
-              className={styles["grid__arrow--black"]}
-              src="/assets/shared/desktop/arrow.svg"
-              alt="arrow icon"
-            ></img>
+        <div className={styles.whiteTile}>
+          <div className={styles["grid__textContainer--white"]}>
+            <h1 className={styles.grid__title}>DESIGNED FOR EVERYONE.</h1>
+            <p className={styles["grid__textBody--black"]}>
+              Photosnap can help you create stories that resonate with your
+              audience. Our tool is designed for photographers of all levels,
+              brands, businesses you name it.
+            </p>
+            <div className={styles.grid__linkContainer}>
+              <p className={styles["grid__link--black"]}>VIEW THE STORIES</p>
+              <img
+                className={styles["grid__arrow--black"]}
+                src="/assets/shared/desktop/arrow.svg"
+                alt="arrow icon"
+              ></img>
+            </div>
           </div>
         </div>
       </div>

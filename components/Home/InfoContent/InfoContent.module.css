@@ -19,9 +19,6 @@
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,7 +47,6 @@
           align-items: center;
   gap: 2rem;
   padding: 3rem 0;
-  max-width: 500px;
   min-height: 100%;
 }
 
