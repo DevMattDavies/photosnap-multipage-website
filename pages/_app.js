@@ -38,7 +38,9 @@ function MyApp({ Component, pageProps }) {
     <>
       <WidthContext.Provider value={width}>
         <Navbar />
-        <Component {...pageProps} />
+        <div id="main">
+          <Component {...pageProps} />
+        </div>
         <Footer />
       </WidthContext.Provider>
     </>
