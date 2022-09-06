@@ -87,21 +87,21 @@
 
 .grid__title {
   font-family: "dm_sansbold", sans-serif;
-  font-size: 40px;
+  font-size: 2.5rem;
   letter-spacing: 3px;
   line-height: 48px;
 }
 
 .grid__textBody--grey {
   font-family: "dm_sansregular", sans-serif;
-  font-size: 15px;
+  font-size: 1rem;
   line-height: 30px;
-  color: #dfdfdf;
+  color: grey;
 }
 
 .grid__textBody--black {
   font-family: "dm_sansregular", sans-serif;
-  font-size: 15px;
+  font-size: 1rem;
   line-height: 30px;
   color: #000000;
 }
@@ -118,7 +118,7 @@
 
 .grid__link--white {
   font-family: "dm_sansbold", sans-serif;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 16px;
   letter-spacing: 2px;
   color: #ffffff;
@@ -131,7 +131,7 @@
 
 .grid__link--black {
   font-family: "dm_sansbold", sans-serif;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 16px;
   letter-spacing: 2px;
   color: #000000;

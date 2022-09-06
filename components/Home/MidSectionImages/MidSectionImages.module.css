@@ -39,13 +39,6 @@
   width: 80%;
 }
 
-.grid__date {
-  font-family: "dm_sansregular", sans-serif;
-  font-size: 1rem;
-  line-height: 30px;
-  color: #ffffff;
-}
-
 .grid__linkContainer {
   display: -webkit-box;
   display: -ms-flexbox;
