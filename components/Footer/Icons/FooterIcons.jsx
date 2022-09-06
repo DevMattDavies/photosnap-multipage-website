@@ -14,8 +14,6 @@ const Icons = [
 
 export default function footerIcons() {
   return Icons.map((icon) => {
-    return (
-      <img src={icon} alt="social icon"></img>
-    );
+    return <img src={icon} alt="social icon"></img>;
   });
 }

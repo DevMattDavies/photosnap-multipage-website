@@ -1,5 +1,5 @@
 import styles from "./FooterMobile.module.scss";
-import footerIcons from "../FooterIcons";
+import footerIcons from "../Icons/FooterIcons";
 
 function FooterMobile() {
   return (
