@@ -69,7 +69,7 @@
   &__linkContainer {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: $arrow-gap;
   }
 
   &__link--white {

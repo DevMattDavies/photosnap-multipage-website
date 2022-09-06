@@ -1,0 +1,59 @@
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+.footer {
+  background-color: $black;
+  display: flex;
+  justify-content: space-around;
+  padding: 5rem 0;
+  height: 300px;
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  &__iconContainer {
+    display: flex;
+    justify-content: space-between;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__mid {
+    position: relative;
+    left: -300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__link {
+    @include linkStyle($white);
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100%;
+  }
+
+  &__invite {
+    display: flex;
+    gap: $arrow-gap;
+  }
+
+  &__arrow--white {
+    @include whiteArrow();
+  }
+
+  &__copyright {
+    @include bodyStyle($grey);
+    opacity: 0.4;
+  }
+}

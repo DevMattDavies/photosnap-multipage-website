@@ -4,7 +4,7 @@ import Link from "next/link";
 function NavbarDesktop() {
   return (
     <nav className={styles.navDesktop}>
-      <img src="/assets/shared/desktop/logo.svg" alt="Main logo SVG" />
+      <img src="/assets/shared/desktop/logo.svg" alt="Main logo" />
       <div className={styles.navDesktop__linksContainer}>
         <Link href="#">
           <a className={styles.navDesktop__navLink}>STORIES</a>
