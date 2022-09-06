@@ -1,12 +1,18 @@
 // Colours
 $black: #000000;
-$grey: #dfdfdf;
+$grey: grey;
 $white: #ffffff;
 $accent: linear-gradient(
   10deg,
   rgba(188, 113, 152, 1) 0%,
   rgba(255, 197, 147, 1) 10%,
   rgba(90, 119, 255, 1) 80%
+);
+$image-background: linear-gradient(
+  180deg,
+  rgba(0, 0, 0, 0.1) 40%,
+  rgba(0, 0, 0, 0.5) 80%,
+  rgba(0, 0, 0, 1) 100%
 );
 
 // Fonts

@@ -2,28 +2,28 @@
 
 @mixin headerStyle() {
   font-family: $header-font;
-  font-size: 40px;
+  font-size: 2.5rem;
   letter-spacing: 3px;
   line-height: 48px;
 }
 
 @mixin subheading1Style($color) {
   font-family: $header-font;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 25px;
   color: $color;
 }
 
 @mixin subheading2Style($color) {
   font-family: $header-font;
-  font-size: 18px;
+  font-size: 1.2rem;
   line-height: 25px;
   color: $color;
 }
 
 @mixin subheading3Style($color) {
   font-family: $header-font;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 16px;
   letter-spacing: 2px;
   color: $color;
@@ -31,14 +31,14 @@
 
 @mixin bodyStyle($color) {
   font-family: $body-font;
-  font-size: 15px;
+  font-size: 1rem;
   line-height: 30px;
   color: $color;
 }
 
 @mixin buttonStyle($color, $background-color) {
   font-family: $body-font;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 16px;
   letter-spacing: 2px;
   background-color: $background-color;
@@ -59,7 +59,7 @@
 
 @mixin linkStyle($color) {
   font-family: $header-font;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 16px;
   letter-spacing: 2px;
   color: $color;

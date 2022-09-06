@@ -10,17 +10,7 @@
     left: 0;
     height: 100%;
     background-image: $image-background;
-  }
-
-  &__image {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    object-fit: contain;
-    z-index: -1;
-    display: block;
-    filter: contrast(130%);
+    // margin-bottom: 8px;
   }
 
   &__textContainer {
@@ -32,7 +22,9 @@
     width: 80%;
   }
 
- 
+  &__date {
+    @include bodyStyle($white);
+  }
 
   &__linkContainer {
     display: flex;
@@ -65,15 +57,13 @@
 
   @media screen and (min-width: 481px) {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
   }
 
   @media screen and (min-width: 1008px) {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: none;
-
     &__item {
       border-bottom: 8px solid black;
+      background-clip: padding-box;
       transition: top 300ms ease-in;
       &:hover {
         position: relative;
@@ -85,5 +75,16 @@
         border-image-source: $accent;
       }
     }
+  }
+
+  &__image {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: contain;
+    z-index: -1;
+    display: block;
+    filter: contrast(130%);
   }
 }

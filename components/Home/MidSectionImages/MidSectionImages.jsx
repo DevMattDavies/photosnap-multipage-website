@@ -9,9 +9,7 @@ function MidSectionImages() {
   return (
     <div className={styles.grid}>
       {/* --- Mountains --- */}
-      <div
-        className={[styles.grid__item, styles.grid__borderGradient].join(" ")}
-      >
+      <div className={styles.grid__item}>
         {width <= 480 && (
           <img
             className={styles.grid__image}

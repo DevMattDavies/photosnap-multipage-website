@@ -1,0 +1,83 @@
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+@mixin textContainer($background-color) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 10%;
+  color: $white;
+  background-color: $background-color;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &__image {
+    display: block;
+    filter: contrast(130%);
+  }
+
+  &__text--mobile {
+    @include textContainer($black);
+  }
+
+  &__text--desktop {
+    @include textContainer(none);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    max-width: 800px;
+
+    @media screen and (min-width: 481px) {
+      max-width: 600px;
+    }
+
+    @media screen and (min-width: 1008px) {
+      max-width: 800px;
+    }
+  }
+
+  &__preamble {
+    @include subheading3Style($white);
+  }
+
+  &__title {
+    @include headerStyle();
+    width: 80%;
+  }
+
+  &__attribution {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__date {
+    @include bodyStyle($grey);
+  }
+
+  &__author {
+    @include bodyStyle($white);
+  }
+
+  &__body-content {
+    @include bodyStyle($grey);
+  }
+
+  &__linkContainer {
+    display: flex;
+    gap: $arrow-gap;
+  }
+
+  &__link {
+    @include linkStyle($white);
+  }
+
+  &__linkArrow {
+    @include whiteArrow();
+  }
+}

@@ -16,6 +16,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  font-size: calc(60% + 0.8vmin);
   width: 100vw;
 }
 
@@ -33,5 +34,6 @@ a {
           box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-size: 1rem;
 }
 /*# sourceMappingURL=globals.css.map */

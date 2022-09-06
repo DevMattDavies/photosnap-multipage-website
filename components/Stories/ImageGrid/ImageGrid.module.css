@@ -12,19 +12,6 @@
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0.5) 80%, black 100%);
 }
 
-.grid__image {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  z-index: -1;
-  display: block;
-  -webkit-filter: contrast(130%);
-          filter: contrast(130%);
-}
-
 .grid__textContainer {
   position: absolute;
   display: -webkit-box;
@@ -106,8 +93,6 @@
   .grid {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: (1fr)[2];
-        grid-template-rows: repeat(2, 1fr);
   }
 }
 
@@ -115,11 +100,10 @@
   .grid {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
-    -ms-grid-rows: none;
-        grid-template-rows: none;
   }
   .grid__item {
     border-bottom: 8px solid black;
+    background-clip: padding-box;
     -webkit-transition: top 300ms ease-in;
     transition: top 300ms ease-in;
   }
@@ -133,4 +117,17 @@
     border-image-source: linear-gradient(10deg, #bc7198 0%, #ffc593 10%, #5a77ff 80%);
   }
 }
-/*# sourceMappingURL=MidSectionImages.module.css.map */
+
+.grid__image {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  z-index: -1;
+  display: block;
+  -webkit-filter: contrast(130%);
+          filter: contrast(130%);
+}
+/*# sourceMappingURL=ImageGrid.module.css.map */
