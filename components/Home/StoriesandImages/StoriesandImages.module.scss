@@ -52,6 +52,7 @@
   &__textContainer--white {
     @include textContainer($white, $black);
     padding: 3rem;
+    height: auto;
   }
 
   &__title {

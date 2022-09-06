@@ -4,35 +4,37 @@
 .footer {
   background-color: $black;
   display: flex;
-  justify-content: space-around;
-  padding: 5rem 0;
+  justify-content: space-between;
+  padding: 5rem 3rem;
   height: 300px;
 
   &__left {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
+  }
+
+  &__icon {
+    width: 200px;
+  }
+
+  &__linksContainer {
+    display: flex;
+    position: relative;
+    gap: 1rem;
+  }
+
+  &__link {
+    @include linkStyle($white);
   }
 
   &__iconContainer {
     display: flex;
     justify-content: space-between;
+    width: 200px;
     &:hover {
       cursor: pointer;
     }
-  }
-
-  &__mid {
-    position: relative;
-    left: -15%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  &__link {
-    @include linkStyle($white);
   }
 
   &__right {
@@ -40,7 +42,6 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
-    height: 100%;
   }
 
   &__invite {

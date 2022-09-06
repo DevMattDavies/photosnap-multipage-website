@@ -82,6 +82,7 @@
   color: #000000;
   gap: 1.5rem;
   padding: 3rem;
+  height: auto;
 }
 
 .grid__title {

@@ -3,9 +3,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 5rem 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5rem 3rem;
   height: 300px;
 }
 
@@ -20,35 +21,18 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 100%;
 }
 
-.footer__iconContainer {
+.footer__icon {
+  width: 200px;
+}
+
+.footer__linksContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.footer__iconContainer:hover {
-  cursor: pointer;
-}
-
-.footer__mid {
   position: relative;
-  left: -15%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  gap: 1rem;
 }
 
 .footer__link {
@@ -61,6 +45,20 @@
 
 .footer__link:hover {
   text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer__iconContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 200px;
+}
+
+.footer__iconContainer:hover {
   cursor: pointer;
 }
 
@@ -78,7 +76,6 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  height: 100%;
 }
 
 .footer__invite {
@@ -105,4 +102,4 @@
   color: #dfdfdf;
   opacity: 0.4;
 }
-/*# sourceMappingURL=FooterDesktop.module.css.map */
+/*# sourceMappingURL=FooterTablet.module.css.map */
