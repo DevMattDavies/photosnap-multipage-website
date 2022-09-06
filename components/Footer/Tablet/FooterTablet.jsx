@@ -1,5 +1,6 @@
 import styles from "./FooterTablet.module.scss";
 import footerIcons from "../Icons/FooterIcons";
+import Link from "next/link";
 
 function FooterTablet() {
   return (
@@ -10,10 +11,18 @@ function FooterTablet() {
           src="/assets/shared/desktop/logo-white.svg"
         ></img>
         <div className={styles.footer__linksContainer}>
-          <p className={styles.footer__link}>HOME</p>
-          <p className={styles.footer__link}>STORIES</p>
-          <p className={styles.footer__link}>FEATURES</p>
-          <p className={styles.footer__link}>PRICING</p>
+          <Link href="/">
+            <a className={styles.footer__link}>HOME</a>
+          </Link>
+          <Link href="/stories">
+            <a className={styles.footer__link}>STORIES</a>
+          </Link>
+          <Link href="/features">
+            <a className={styles.footer__link}>FEATURES</a>
+          </Link>
+          <Link href="/pricing">
+            <a className={styles.footer__link}>PRICING</a>
+          </Link>
         </div>
         <div className={styles.footer__iconContainer}>{footerIcons()}</div>
       </div>

@@ -6,13 +6,16 @@ function NavbarDesktop() {
     <nav className={styles.navDesktop}>
       <img src="/assets/shared/desktop/logo.svg" alt="Main logo" />
       <div className={styles.navDesktop__linksContainer}>
-        <Link href="#">
+        <Link href="/">
+          <a className={styles.navDesktop__navLink}>HOME</a>
+        </Link>
+        <Link href="/stories">
           <a className={styles.navDesktop__navLink}>STORIES</a>
         </Link>
-        <Link href="#">
+        <Link href="/features">
           <a className={styles.navDesktop__navLink}>FEATURES</a>
         </Link>
-        <Link href="#">
+        <Link href="/pricing">
           <a className={styles.navDesktop__navLink}>PRICING</a>
         </Link>
       </div>

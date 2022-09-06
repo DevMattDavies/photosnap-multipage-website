@@ -1,4 +1,5 @@
 import styles from "./FooterDesktop.module.scss";
+import Link from "next/link";
 import footerIcons from "../Icons/FooterIcons";
 
 function FooterDesktop() {
@@ -9,10 +10,18 @@ function FooterDesktop() {
         <div className={styles.footer__iconContainer}>{footerIcons()}</div>
       </div>
       <div className={styles.footer__mid}>
-        <p className={styles.footer__link}>HOME</p>
-        <p className={styles.footer__link}>STORIES</p>
-        <p className={styles.footer__link}>FEATURES</p>
-        <p className={styles.footer__link}>PRICING</p>
+        <Link href="/">
+          <a className={styles.footer__link}>HOME</a>
+        </Link>
+        <Link href="/stories">
+          <a className={styles.footer__link}>STORIES</a>
+        </Link>
+        <Link href="/features">
+          <a className={styles.footer__link}>FEATURES</a>
+        </Link>
+        <Link href="/pricing">
+          <a className={styles.footer__link}>PRICING</a>
+        </Link>
       </div>
       <div className={styles.footer__right}>
         <div className={styles.footer__invite}>

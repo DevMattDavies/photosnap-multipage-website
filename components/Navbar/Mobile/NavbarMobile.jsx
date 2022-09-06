@@ -33,7 +33,7 @@ function NavbarMobile() {
         }
         alt="Hamburger menu SVG"
       />
-      {isMenuOpen && <NavbarModal />}
+      {isMenuOpen && <NavbarModal menuToggleHandler={menuToggleHandler} />}
     </nav>
   );
 }
