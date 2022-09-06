@@ -1,0 +1,54 @@
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+.footer {
+  background-color: $black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 3rem;
+  gap: 2rem;
+  height: max-content;
+
+  &__logo {
+    width: 200px;
+  }
+
+  &__iconContainer {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__linksContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 20px;
+  }
+
+  &__link {
+    @include linkStyle($white);
+  }
+
+  &__invite {
+    display: flex;
+    gap: $arrow-gap;
+    position: relative;
+    padding-top: 50px;
+  }
+
+  &__arrow--white {
+    @include whiteArrow();
+  }
+
+  &__copyright {
+    @include bodyStyle($grey);
+    opacity: 0.4;
+  }
+}
