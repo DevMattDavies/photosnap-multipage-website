@@ -115,6 +115,8 @@
   }
   .grid__item {
     border-bottom: 8px solid transparent;
+    -webkit-transition: top 300ms ease-in;
+    transition: top 300ms ease-in;
   }
   .grid__item:hover {
     position: relative;

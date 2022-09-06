@@ -76,6 +76,7 @@
 
     &__item {
       border-bottom: 8px solid transparent;
+      transition: top 300ms ease-in;
       &:hover {
         position: relative;
         top: -30px;
