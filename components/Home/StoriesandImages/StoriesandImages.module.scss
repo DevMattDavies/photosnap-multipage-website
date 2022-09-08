@@ -181,6 +181,8 @@
       grid-column-end: 8;
       grid-row-start: 3;
       grid-row-end: 4;
+      position: relative;
+      z-index: -1;
     }
 
     &__row-3-column-2 {
@@ -188,6 +190,8 @@
       grid-column-end: 4;
       grid-row-start: 3;
       grid-row-end: 4;
+      position: relative;
+      z-index: -1;
     }
 
     &__textContainer--white {

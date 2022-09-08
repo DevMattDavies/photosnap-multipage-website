@@ -269,6 +269,8 @@
     -ms-grid-row: 3;
         grid-row-start: 3;
     grid-row-end: 4;
+    position: relative;
+    z-index: -1;
   }
   .grid__row-3-column-2 {
     -ms-grid-column: 1;
@@ -277,6 +279,8 @@
     -ms-grid-row: 3;
         grid-row-start: 3;
     grid-row-end: 4;
+    position: relative;
+    z-index: -1;
   }
   .grid__textContainer--white {
     padding: 10rem;

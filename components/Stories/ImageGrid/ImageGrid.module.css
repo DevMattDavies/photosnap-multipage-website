@@ -3,6 +3,11 @@
   display: grid;
 }
 
+.grid__itemContainer {
+  position: relative;
+  z-index: 1000;
+}
+
 .grid__item {
   position: relative;
   top: 0;

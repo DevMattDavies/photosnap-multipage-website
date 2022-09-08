@@ -9,31 +9,33 @@ function MidSectionImages() {
   return (
     <div className={styles.grid}>
       {/* --- Mountains --- */}
-      <div className={styles.grid__item}>
-        {width <= 480 && (
-          <img
-            className={styles.grid__image}
-            src="/assets/stories/mobile/mountains.jpg"
-          ></img>
-        )}
-        {width > 480 && (
-          <img
-            className={styles.grid__image}
-            src="/assets/stories/desktop/mountains.jpg"
-          ></img>
-        )}
-        <div className={styles.grid__textContainer}>
-          <h4 className={styles.grid__title}>The Mountains</h4>
-          <p className={styles.grid__attribution}>by John Appleseed</p>
-          <hr />
-          <div className={styles.grid__linkContainer}>
-            <Link href="#">
-              <a className={styles.grid__link}>READ STORY</a>
-            </Link>
+      <div className={styles.grid__itemContainer}>
+        <div className={styles.grid__item}>
+          {width <= 480 && (
             <img
-              className={styles["grid__arrow--white"]}
-              src="/assets/shared/desktop/arrow.svg"
+              className={styles.grid__image}
+              src="/assets/stories/mobile/mountains.jpg"
             ></img>
+          )}
+          {width > 480 && (
+            <img
+              className={styles.grid__image}
+              src="/assets/stories/desktop/mountains.jpg"
+            ></img>
+          )}
+          <div className={styles.grid__textContainer}>
+            <h4 className={styles.grid__title}>The Mountains</h4>
+            <p className={styles.grid__attribution}>by John Appleseed</p>
+            <hr />
+            <div className={styles.grid__linkContainer}>
+              <Link href="#">
+                <a className={styles.grid__link}>READ STORY</a>
+              </Link>
+              <img
+                className={styles["grid__arrow--white"]}
+                src="/assets/shared/desktop/arrow.svg"
+              ></img>
+            </div>
           </div>
         </div>
       </div>
