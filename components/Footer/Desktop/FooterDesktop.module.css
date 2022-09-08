@@ -3,9 +3,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 5rem 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5rem 10rem;
   height: 300px;
 }
 
@@ -53,7 +54,7 @@
 
 .footer__link {
   font-family: "dm_sansbold", sans-serif;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 16px;
   letter-spacing: 2px;
   color: #ffffff;
@@ -100,9 +101,9 @@
 
 .footer__copyright {
   font-family: "dm_sansregular", sans-serif;
-  font-size: 15px;
+  font-size: 1.2rem;
   line-height: 30px;
-  color: #dfdfdf;
+  color: grey;
   opacity: 0.4;
 }
 /*# sourceMappingURL=FooterDesktop.module.css.map */

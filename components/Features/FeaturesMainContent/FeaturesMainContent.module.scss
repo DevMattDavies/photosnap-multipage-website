@@ -1,0 +1,41 @@
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+.grid {
+  display: grid;
+  width: 100%;
+  padding: 5rem 3rem;
+  gap: 5rem;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__title {
+    @include subheading1Style($black);
+    margin-top: 1rem;
+  }
+
+  &__text {
+    @include bodyStyle($grey);
+    text-align: center;
+  }
+
+  &__image--responsive {
+    width: auto;
+    height: 72px;
+    // margin-bottom: 1rem;
+  }
+
+  @media screen and (min-width: 481px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media screen and (min-width: 1008px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 5rem 10rem;
+  }
+}

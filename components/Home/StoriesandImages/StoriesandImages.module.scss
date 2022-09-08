@@ -42,7 +42,8 @@
     border-left: 8px solid;
     border-image-slice: 1;
     border-width: 8px;
-    padding: 3rem;
+    padding: 0 3rem;
+    margin: 3rem 0;
   }
 
   &__borderGradient {
@@ -140,7 +141,8 @@
     }
 
     &__textContainer--black {
-      padding: 0 5rem;
+      padding: 0 3rem;
+      margin: 0;
     }
   }
 
@@ -195,11 +197,12 @@
     }
 
     &__textContainer--white {
-      padding: 10rem;
+      padding: 8rem;
     }
 
     &__textContainer--black {
-      padding: 0 10rem;
+      padding: 0 8rem;
+      margin: 0;
       gap: 4rem;
     }
   }

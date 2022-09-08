@@ -1,0 +1,106 @@
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.grid__image {
+  width: 100%;
+}
+
+.grid__blackTile {
+  background-color: #000000;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grid__textContainer--black {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  color: #ffffff;
+  gap: 1.5rem;
+  border-left: 8px solid;
+  border-image-slice: 1;
+  border-width: 8px;
+  padding: 0 3rem;
+  margin: 5rem 0;
+}
+
+.grid__borderGradient {
+  border-image-source: linear-gradient(10deg, #bc7198 0%, #ffc593 10%, #5a77ff 80%);
+}
+
+.grid__title {
+  font-family: "dm_sansbold", sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+  line-height: 48px;
+}
+
+.grid__textBody--grey {
+  font-family: "dm_sansregular", sans-serif;
+  font-size: 1rem;
+  line-height: 30px;
+  color: grey;
+}
+
+.grid__textBody--black {
+  font-family: "dm_sansregular", sans-serif;
+  font-size: 1rem;
+  line-height: 30px;
+  color: #000000;
+}
+
+@media screen and (min-width: 481px) {
+  .grid {
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+  }
+  .grid__blackTile {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+  }
+  .grid__textContainer--black {
+    padding: 3rem;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1008px) {
+  .grid {
+    -ms-grid-columns: 2fr 3fr;
+        grid-template-columns: 2fr 3fr;
+  }
+  .grid__blackTile {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+  }
+  .grid__textContainer--black {
+    padding: 3rem 5rem;
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=FeaturesHero.module.css.map */

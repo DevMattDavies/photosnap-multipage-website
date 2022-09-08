@@ -1,0 +1,74 @@
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+.betaContainer {
+  position: relative;
+  top: 0;
+  left: 0;
+
+  &__image {
+    width: 100%;
+    display: block;
+  }
+
+  &__textContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: $white;
+    border-left: 8px solid;
+    border-image-slice: 1;
+    border-width: 8px;
+    padding: 0 3rem;
+  }
+
+  &__borderGradient {
+    border-image-source: $accent;
+  }
+
+  &__title {
+    @include headerStyle();
+  }
+
+  &__invite {
+    display: flex;
+    align-items: center;
+    gap: $arrow-gap;
+  }
+
+  &__inviteText {
+    @include linkStyle($white);
+  }
+
+  &__inviteArrow {
+    @include whiteArrow();
+  }
+
+  @media screen and (min-width: 481px) {
+    &__textContainer {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__title {
+      max-width: 50%;
+    }
+  }
+
+  @media screen and (min-width: 1008px) {
+    &__textContainer {
+      padding: 0 10rem;
+    }
+
+    &__title {
+      max-width: 30%;
+    }
+  }
+}
