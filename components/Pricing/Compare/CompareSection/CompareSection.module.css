@@ -26,10 +26,11 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100;
+  width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-right: 3rem;
 }
 
 .section__tickBox {

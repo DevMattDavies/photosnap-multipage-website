@@ -17,8 +17,9 @@
 
   &__options {
     display: flex;
-    width: 100;
+    width: 100%;
     justify-content: space-between;
+    padding-right: 3rem;
   }
 
   &__tickBox {
