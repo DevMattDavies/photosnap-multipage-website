@@ -1,0 +1,79 @@
+@import "../../../../styles/mixins";
+@import "../../../../styles/variables";
+
+@mixin pricingButton($color, $background-color) {
+  border: none;
+  outline: none;
+  width: 100%;
+  color: $color;
+  background-color: $background-color;
+  padding: 1rem;
+}
+
+.pricingBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 3rem;
+  gap: 2rem;
+
+  &__title--grey {
+    @include headerStyle;
+  }
+
+  &__title--black {
+    @include headerStyle;
+    color: $white;
+  }
+
+  &__text--grey {
+    @include bodyStyle($grey);
+  }
+
+  &__text--black {
+    @include bodyStyle($grey);
+  }
+
+  &__price--grey {
+    @include headerStyle;
+  }
+
+  &__price--black {
+    @include headerStyle;
+    color: $white;
+  }
+
+  &__priceContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__monthYearText {
+    color: $grey;
+    @include bodyStyle($grey);
+  }
+
+  &__button--black {
+    @include pricingButton($white, $black);
+    @include subheading2Style($white);
+  }
+
+  &__button--white {
+    @include pricingButton($black, $white);
+    @include subheading2Style($black);
+  }
+}
+
+.pricingBox--grey {
+  background-color: #f4f1f1;
+}
+
+.pricingBox--black {
+  background-color: $black;
+  @media screen and (min-width: 1008px) {
+    padding: 4rem;
+  }
+}

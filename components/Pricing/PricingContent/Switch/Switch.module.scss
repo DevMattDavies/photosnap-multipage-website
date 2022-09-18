@@ -1,0 +1,16 @@
+@import "../../../../styles/variables";
+
+.switch {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: $body-font;
+}
+
+.switch__text--black {
+  color: $black;
+}
+
+.switch__text--grey {
+  color: $grey;
+}

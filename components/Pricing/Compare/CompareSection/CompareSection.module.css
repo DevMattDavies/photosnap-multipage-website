@@ -1,0 +1,55 @@
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+.section hr {
+  border: none;
+  border-bottom: 1px solid #c2c1c1;
+}
+
+.section__title {
+  font-family: "dm_sansbold", sans-serif;
+  font-size: 1.2rem;
+  line-height: 25px;
+  letter-spacing: 2px;
+  color: #000000;
+}
+
+.section__options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section__tickBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  font-family: "dm_sansbold", sans-serif;
+  font-size: 0.75rem;
+  line-height: 16px;
+  letter-spacing: 2px;
+  color: grey;
+}
+
+.section__tick {
+  width: 25px;
+  height: auto;
+}
+/*# sourceMappingURL=CompareSection.module.css.map */

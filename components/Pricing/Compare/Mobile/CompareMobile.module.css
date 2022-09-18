@@ -1,0 +1,25 @@
+.compare {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem 2rem 5rem;
+  gap: 2rem;
+}
+
+.compare hr {
+  border: none;
+  border-bottom: 1px solid #000000;
+}
+
+.compare__title {
+  font-family: "dm_sansbold", sans-serif;
+  font-size: 1.2rem;
+  line-height: 25px;
+  letter-spacing: 2px;
+  color: #000000;
+}
+/*# sourceMappingURL=CompareMobile.module.css.map */

@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,OAAO,CAAC;EACN,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,GAAG,EAAE,IAAI;EACT,WAAW,ECaD,gBAAgB,EAAE,UAAU;CDZvC;;AAED,AAAA,oBAAoB,CAAC;EACnB,KAAK,ECTC,OAAO;CDUd;;AAED,AAAA,mBAAmB,CAAC;EAClB,KAAK,ECZA,IAAI;CDaV",
+    "sources": [
+        "Switch.module.scss",
+        "../../../../styles/_variables.scss"
+    ],
+    "names": [],
+    "file": "Switch.module.css"
+}

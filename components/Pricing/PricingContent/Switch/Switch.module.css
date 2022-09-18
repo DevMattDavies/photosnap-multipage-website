@@ -1,0 +1,19 @@
+.switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  font-family: "dm_sansregular", sans-serif;
+}
+
+.switch__text--black {
+  color: #000000;
+}
+
+.switch__text--grey {
+  color: grey;
+}
+/*# sourceMappingURL=Switch.module.css.map */

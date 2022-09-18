@@ -1,0 +1,35 @@
+@import "../../../../styles/mixins";
+@import "../../../../styles/variables";
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  hr {
+    border: none;
+    border-bottom: 1px solid rgb(194, 193, 193);
+  }
+
+  &__title {
+    @include subheading2Style($black);
+  }
+
+  &__options {
+    display: flex;
+    width: 100;
+    justify-content: space-between;
+  }
+
+  &__tickBox {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    @include subheading3Style($grey);
+  }
+
+  &__tick {
+    width: 25px;
+    height: auto;
+  }
+}

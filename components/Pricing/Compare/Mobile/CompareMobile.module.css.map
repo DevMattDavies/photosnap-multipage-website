@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,QAAQ,CAAC;EACP,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,OAAO,EAAE,cAAc;EACvB,GAAG,EAAE,IAAI;CAUV;;AAdD,AAME,QANM,CAMN,EAAE,CAAC;EACD,MAAM,EAAE,IAAI;EACZ,aAAa,EAAE,GAAG,CAAC,KAAK,CEVpB,OAAO;CFWZ;;AAEA,AAAD,eAAQ,CAAC;ECGT,WAAW,ECCC,aAAa,EAAE,UAAU;EDArC,SAAS,EAAE,MAAM;EACjB,WAAW,EAAE,IAAI;EACjB,cAAc,EAAE,GAAG;EACnB,KAAK,ECpBC,OAAO;CFeZ",
+    "sources": [
+        "CompareMobile.module.scss",
+        "../../../../styles/_mixins.scss",
+        "../../../../styles/_variables.scss",
+        "../../../../styles/_variables.scss"
+    ],
+    "names": [],
+    "file": "CompareMobile.module.css"
+}
