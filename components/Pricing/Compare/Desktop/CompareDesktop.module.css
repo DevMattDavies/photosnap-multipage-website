@@ -1,0 +1,51 @@
+.compare {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem 2rem;
+}
+
+.compare__title {
+  font-family: "dm_sansbold", sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+  line-height: 48px;
+}
+
+.compare__subheading {
+  font-family: "dm_sansbold", sans-serif;
+  font-size: 0.75rem;
+  line-height: 16px;
+  letter-spacing: 2px;
+  color: #000000;
+}
+
+.compare__table {
+  display: -ms-grid;
+  display: grid;
+  margin-top: 4rem;
+  width: 100%;
+  -ms-grid-columns: 40% 1fr 1fr 1fr;
+      grid-template-columns: 40% 1fr 1fr 1fr;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.compare__table hr {
+  grid-column: span 4;
+}
+
+@media screen and (min-width: 1008px) {
+  .compare {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=CompareDesktop.module.css.map */
